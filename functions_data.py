@@ -10,12 +10,12 @@ from sklearn.feature_extraction import text
 import wordcloud
 import functools
 
-PATH_LOG = "/content/drive/MyDrive/anomaly_detection/examples/log/"
+PATH_LOG = ""  # to be filled
 filenames_log = glob.glob(PATH_LOG + "/*.csv")
 
-PATH_STORE = "/content/drive/MyDrive/anomaly_detection/examples/monitoring/monitoring_storage_data/processed_files"
+PATH_STORE = "" # to be filled
 filenames_storage = glob.glob(PATH_STORE + "/*.csv")
-PATH_FARM = "/content/drive/MyDrive/anomaly_detection/examples/monitoring/monitoring_farming_data/processed_files"
+PATH_FARM = "" # to be filled
 filenames_farming = glob.glob(PATH_FARM + "/*.csv")
 
 
@@ -96,8 +96,3 @@ def get_monit_dataframe_per_host(filenames: list) -> dict:
         host = filename[107:-4]
         dict_ip_monit[host] = pd.read_csv(filename, low_memory=False).drop('Unnamed: 0', axis=1)
     return dict_ip_monit
-
-
-dict_ip_log = get_log_dataframes_per_host(filenames)
-dict_ip_store[host] = get_monit_dataframe_per_host(filenames_store)
-dict_ip_farm[host] = get_monit_dataframe_per_host(filenames_farm)
