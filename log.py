@@ -239,6 +239,32 @@ class AnomalyPCA(Log):
         len_anom_msg.append(len(anomal_msg))
         len_non_anom_msg.append(len(non_anomal_msg))
         return df_service_temp, common_anom_words, common_non_anom_words
+    
+    def plot_recon_err_pca(self):
+       df_service = self.df
+       tolerance = self.tolerance
+       n_comps = self.n_comps
+       df = dict_ip_store[host].copy()
+       df = df.fillna(0)
+       scaler = StandardScaler()
+       df.iloc[:,1:] = scaler.fit_transform(df.iloc[:,1:].to_numpy())
+       if not df.empty:
+          X = np.array(df_1.iloc[:, 1:])
+          pca = PCA().fit(X)
+          trans_x = pca.transform(X)
+          p_comp = pca.components_
+          result = np.dot(trans_x[:, 0:n_comps], p_comp[0:n_comps, :])
+          diff = X - result
+          diff_sq = diff * diff
+          errs = np.sum(diff_sq, axis=1)
+       plt.figure(figsize=(15,5))
+       ax = errs.plot()
+       anomalies.plot(marker='o', ls='', ax=ax, color='r')
+       plt.xlabel('index')
+       plt.ylabel('recon. error')
+       plt.legend(['series', 'anomalies'])
+       plt.grid()
+       plt.show()
 
 
 class LogAnomalyTimeSeries():
