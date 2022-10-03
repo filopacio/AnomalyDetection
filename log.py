@@ -58,7 +58,7 @@ class Log():
         plt.show()
 
 
-class AnomalyDbscan(Log):
+class LogAnomalyDbscan(Log):
     def __init__(self,
                  df: pd.DataFrame,
                  reduce_dim: bool,
@@ -127,7 +127,7 @@ class AnomalyDbscan(Log):
         plt.show()
 
 
-class AnomalyKmeans(Log):
+class LogAnomalyKmeans(Log):
     def __init__(self,
                  df: pd.DataFrame,
                  reduce_dim: bool,
@@ -201,7 +201,7 @@ class AnomalyKmeans(Log):
         plt.show()
 
 
-class AnomalyPCA(Log):
+class LogAnomalyPCA(Log):
     def __init__(self,
                  df: pd.DataFrame,
                  tolerance: float,
