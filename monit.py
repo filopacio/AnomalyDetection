@@ -23,7 +23,7 @@ class Monit():
         return list_keys
 
 
-class AnomalyDbscan(Monit):
+class MonitAnomalyDbscan(Monit):
     def __init__(self,
                  monit_type: str,
                  dict_ip: dict,
@@ -54,7 +54,7 @@ class AnomalyDbscan(Monit):
         return dict_results
 
 
-class AnomalyKMeans(Monit):
+class MonitAnomalyKMeans(Monit):
     def __init__(self,
                  monit_type: str,
                  dict_ip: dict,
@@ -85,7 +85,7 @@ class AnomalyKMeans(Monit):
         return dict_results
 
 
-class AnomalyPCA(Monit):
+class MonitAnomalyPCA(Monit):
     def __init__(self,
                  monit_type: str,
                  dict_ip: dict,
@@ -112,7 +112,7 @@ class AnomalyPCA(Monit):
         return dict_results
 
 
-class AnomalyTimeSeries(Monit):
+class MonitAnomalyTimeSeries(Monit):
     def __init__(self,
                  monit_type: str,
                  dict_ip: dict,
