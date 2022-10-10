@@ -59,6 +59,14 @@ def get_dataframes_per_host(filenames: list,
     return dict_ip
 
 
+def vectorize_sentence_from_single_vectors(sentence, w2v_model):
+    b = list()
+    for i in sentence:
+        b.append(w2v_model.wv.get_vector(i))
+    b = pd.Series(b)
+    sentence_vector = np.mean(b)
+    return sentence_vector
+
 def vectorize_msg(df):
     df['clean_msg'] = df['msg'].apply(clean_text)
     df['clean_msg'] = df['clean_msg'].apply(lambda x: x.split())
