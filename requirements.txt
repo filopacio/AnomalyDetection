@@ -1,0 +1,8 @@
+data==0.4
+gensim==4.2.0
+matplotlib==3.5.1
+numpy==1.22.3
+pandas==1.4.2
+scikit_learn==1.1.2
+scipy==1.8.0
+wordcloud==1.8.1
