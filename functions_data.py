@@ -85,7 +85,7 @@ def vectorize_log(dict_ip: dict) -> dict:
 
 
 def get_log_dataframes_per_host(filenames: list, indexes_to_use: list) -> dict:
-    dict_ip_log = get_log_dataframes_per_host(filenames, indexes_to_use)
+    dict_ip_log = get_dataframes_per_host(filenames, indexes_to_use)
     dict_ip_log = vectorize_log(dict_ip_log)
     return dict_ip_log
 
