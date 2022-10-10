@@ -33,7 +33,7 @@ def clean_text(text_in: str) -> str:
 
 
 def get_dataframes_per_host(filenames: list,
-                            indexes_to_use: list = [[0, 11, 12, 15, 16, 20, 30, 31, 33, 35, 38]]) -> dict:
+                            indexes_to_use: list = [0, 11, 12, 15, 16, 20, 30, 31, 33, 35, 38]) -> dict:
     """
     Takes the path of the repository containing the csv file and returns a dictionary with one dataset for every ip (or network)
 

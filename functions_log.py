@@ -5,7 +5,7 @@ from gensim.models import Word2Vec
 from sklearn.decomposition import PCA
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import KMeans
-from data import clean_text
+from functions_data import clean_text
 
 
 def clean_text(text_in: str) -> str:
