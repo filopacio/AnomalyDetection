@@ -81,7 +81,7 @@ class LogAnomalyDbscan(Log):
         len_anom_msg = []
         len_non_anom_msg = []
         df, support_df = vectorize_message(df_service)
-        df_temp = cluster_log(df, reduce_dim, threshold, n_comps)
+        df_temp = cluster_log_db(df, reduce_dim, threshold, n_comps)
         anom_dict = df_temp[['words', 'anomaly']].groupby('words')['anomaly'].apply(list).to_dict()
         support_df['anom_score'] = support_df['clean_msg'].apply(lambda x: compute_anom_score(x, anom_dict))
         df_service_temp = df_service.merge(support_df, on='msg')
