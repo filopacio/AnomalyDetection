@@ -21,7 +21,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 ### Installation 
 
 <pre><code>
-git clone ...
+git clone https://github.com/filopacio/AnomalyDetection.git
 </code></pre>
 
 ### Example
