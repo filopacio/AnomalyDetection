@@ -43,7 +43,7 @@ df_log.plot_2d_words_service()
 
 Then use the type of Anomaly Detection object preferred
 
-´´´sh
+´´´
 db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
 ´´´
 
