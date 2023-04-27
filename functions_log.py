@@ -54,7 +54,7 @@ def compute_dbscan(df: pd.DataFrame,
     return labels, X, core_samples_mask
 
 
-def cluster_log(df: pd.DataFrame,
+def cluster_log_db(df: pd.DataFrame,
                 reduce_dim: bool,
                 threshold: float,
                 n_comps: int):
@@ -98,12 +98,12 @@ def cluster_log_km(df: pd.DataFrame,
 
 
 def vectorize_message(df: pd.DataFrame):
-    support_df = pd.DataFrame(
-        {'msg': list(pd.unique(df.msg)), 'clean_msg': [clean_text(i).split() for i in list(pd.unique(df.msg))]})
-    df_service = df.merge(support_df, on='msg', how='left')
+    support_df = pd.DataFrame({'msg': list(pd.unique(df_s.msg)), 'clean_msg': [clean_text(i).split() for i in list(pd.unique(df_s.msg))]})
+    df_service = df_s.merge(support_df, on='msg', how='left')
     clean = list(df_service.loc[:, 'clean_msg'])
     vec = Word2Vec(clean, min_count=1)
-    df_service = pd.DataFrame({'words': [i for i in vec.wv.vocab], 'vec': [vec[i] for i in vec.wv.vocab]})
+    df_service = pd.DataFrame({'words': [i for i in vec.wv.key_to_index.keys()], 'vec': [vec.wv[i] for i in vec.wv.key_to_index.keys()]})
+    #df_service = pd.DataFrame({'words': [i for i in vec.wv], 'vec': [vec[i] for i in vec.wv]})
     return df_service, support_df
 
 
