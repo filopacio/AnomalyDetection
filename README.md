@@ -18,15 +18,15 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 - Time Series Outlier Detection
 
 
-### Installation 
+## Installation 
 
 <pre><code>
 git clone https://github.com/filopacio/AnomalyDetection.git
 </code></pre>
 
-### Example
+## Usage
 
-#### Log
+### Log
 Read your Log Dataset and get a Log object
 
 <pre><code>
@@ -55,6 +55,8 @@ df_anom, common_anom, common_non_anom = db.compute_anomaly()
 db.plot_clustering_results()
 </code></pre>
 
+
+### Monit
 
 
 
