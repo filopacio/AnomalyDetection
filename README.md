@@ -19,7 +19,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 
 ## Installation 
 
-```c
+```sh
 git clone https://github.com/filopacio/AnomalyDetection.git
 ```
 
@@ -28,7 +28,7 @@ git clone https://github.com/filopacio/AnomalyDetection.git
 ### Log
 Read your Log Dataset and get a Log object
 
-```c
+```sh
 df_s = pd.read_csv('YOUR PATH')
  df_log = Log(df_s)
 ```
@@ -49,7 +49,7 @@ db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
 
 And finally compute the anomaly and/or plot the results
 
-```c
+```sh
 df_anom, common_anom, common_non_anom = db.compute_anomaly()
 db.plot_clustering_results()
 ```
