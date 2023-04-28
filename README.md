@@ -36,7 +36,7 @@ This class object can plot the vectorized version of its messages, reduced in 2 
 
 
 <pre><code> df_log.plot_2d_words_service()
-#df_log.plot_3d_words_service
+ #df_log.plot_3d_words_service
 </code></pre>
 
 Then use the type of Anomaly Detection object preferred
@@ -47,7 +47,7 @@ Then use the type of Anomaly Detection object preferred
 And finally compute the anomaly and/or plot the results
 
 <pre><code> df_anom, common_anom, common_non_anom = db.compute_anomaly()
-db.plot_clustering_results()
+ db.plot_clustering_results()
 </code></pre>
 
 
