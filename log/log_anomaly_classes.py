@@ -8,8 +8,8 @@ from sklearn.cluster import DBSCAN
 from sklearn.cluster import KMeans
 from collections import Counter
 import wordcloud
-from functions_data import clean_text
-from functions_log import *
+#from functions_data import clean_text
+#from functions_log import *
 
 class Log():
     def __init__(self,
