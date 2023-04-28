@@ -5,20 +5,10 @@ from gensim.models import Word2Vec
 from sklearn.decomposition import PCA
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import KMeans
-#from functions_data import clean_text
+from AnomalyDetection.data.functions_data import clean_text
 
 
-def clean_text(text_in: str) -> str:
-    """
-    Takes a string and returns the string with all the words in lower text and without digits
-    :param text_in: the string to be cleaned
-    :return text_out: the string cleaned
-    """
-    text = str(text_in).lower()  # all in lower case
-    text = re.sub("[\d-]", ' ', text)  # to remove digits
-    text = re.sub('https://\S+|www\.\S', ' ', text)  # to remove link
-    text_out = re.sub('\W+', ' ', text)  # to remove punctuation and special characters
-    return text_out
+
 
 
 def compute_distance_quantile(X: np.array,
