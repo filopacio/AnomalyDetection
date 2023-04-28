@@ -53,10 +53,6 @@ And finally compute the anomaly and/or plot the results
 
 ### Monit
 
-´´´c
-ciao = Log()
-´´´
-
 
 
 
