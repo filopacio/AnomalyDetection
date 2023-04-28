@@ -29,7 +29,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 Read your Log Dataset and get a Log object
 
 <pre><code> df_s = pd.read_csv('YOUR PATH')
-df_log = Log(df_s)
+ df_log = Log(df_s)
 </code></pre>
 
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
