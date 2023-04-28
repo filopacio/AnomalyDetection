@@ -196,7 +196,7 @@ class LogAnomalyKmeans(Log):
         plt.scatter(filtered_label2[:, 0], filtered_label2[:, 1])
         for i, word in enumerate(words2):
             plt.annotate(word, xy=(filtered_label2[i, 0], filtered_label2[i, 1]))
-        plt.legend(loc='upper left')
+        plt.legend(['regular', 'anomalous'], loc='upper left')
         plt.grid()
         plt.show()
 
