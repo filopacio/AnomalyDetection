@@ -20,8 +20,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 
 ## Installation 
 
-<pre><code>
-git clone https://github.com/filopacio/AnomalyDetection.git
+<pre><code> git clone https://github.com/filopacio/AnomalyDetection.git
 </code></pre>
 
 ## Usage
@@ -29,28 +28,25 @@ git clone https://github.com/filopacio/AnomalyDetection.git
 ### Log
 Read your Log Dataset and get a Log object
 
-<pre><code>
-df_s = pd.read_csv('YOUR PATH')
+<pre><code> df_s = pd.read_csv('YOUR PATH')
 df_log = Log(df_s)
 </code></pre>
 
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
 
 
-<pre><code>df_log.plot_2d_words_service()
+<pre><code> df_log.plot_2d_words_service()
 #df_log.plot_3d_words_service
 </code></pre>
 
 Then use the type of Anomaly Detection object preferred
 
-<pre><code>
-db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
+<pre><code> db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
 </code></pre>
 
 And finally compute the anomaly and/or plot the results
 
-<pre><code>
-df_anom, common_anom, common_non_anom = db.compute_anomaly()
+<pre><code> df_anom, common_anom, common_non_anom = db.compute_anomaly()
 db.plot_clustering_results()
 </code></pre>
 
