@@ -37,8 +37,7 @@ df_log = Log(df_s)
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
 
 
-<pre><code>
-df_log.plot_2d_words_service()
+<pre><code>df_log.plot_2d_words_service()
 #df_log.plot_3d_words_service
 </code></pre>
 
