@@ -36,14 +36,14 @@ df_s = pd.read_csv('YOUR PATH')
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
 
 
-```c
+```sh
 df_log.plot_2d_words_service()
 #df_log.plot_3d_words_service
 ```
 
 Then use the type of Anomaly Detection object preferred
 
-```c
+```sh
 db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
 ```
 
