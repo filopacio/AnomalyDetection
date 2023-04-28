@@ -25,7 +25,7 @@ class Log():
         plt.figure(figsize=(15, 15))
         plt.scatter(result[:, 0], result[:, 1])
         plt.rcParams.update({'font.size': 25})
-        words = list([i for i in df['words'] if len(i) > 3])
+        words = list([i for i in df['words']]) # if len(i) > 3
         for i, word in enumerate(words):
             plt.annotate(word, xy=(result[i, 0], result[i, 1]))
         plt.xlabel('comp. 1')
