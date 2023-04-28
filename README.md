@@ -9,7 +9,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 - Numerical Data from Monitoring Process. So, different metrics representing the health status of machines were given. (e.g. CPU usage, load averages, etc.)
 
 
-```
+```c
 ciao = we()
 ```
 
