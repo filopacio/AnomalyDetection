@@ -31,7 +31,7 @@ Read your Log Dataset and get a Log object
 
 ```sh
 df_s = pd.read_csv('YOUR PATH')
- df_log = Log(df_s)
+df_log = Log(df_s)
 ```
 
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
