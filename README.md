@@ -9,10 +9,6 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 - Numerical Data from Monitoring Process. So, different metrics representing the health status of machines were given. (e.g. CPU usage, load averages, etc.)
 
 
-```c
-ciao = we()
-```
-
 **Main Techniques used**:
 
 - Natural Language Processing
@@ -23,35 +19,40 @@ ciao = we()
 
 ## Installation 
 
-<pre><code> git clone https://github.com/filopacio/AnomalyDetection.git
-</code></pre>
+```c
+git clone https://github.com/filopacio/AnomalyDetection.git
+```
 
 ## Usage
 
 ### Log
 Read your Log Dataset and get a Log object
 
-<pre><code> df_s = pd.read_csv('YOUR PATH')
+```c
+df_s = pd.read_csv('YOUR PATH')
  df_log = Log(df_s)
-</code></pre>
+```
 
 This class object can plot the vectorized version of its messages, reduced in 2 or 3 components
 
 
-<pre><code> df_log.plot_2d_words_service()
- #df_log.plot_3d_words_service
-</code></pre>
+```c
+df_log.plot_2d_words_service()
+#df_log.plot_3d_words_service
+```
 
 Then use the type of Anomaly Detection object preferred
 
-<pre><code> db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
-</code></pre>
+```c
+db = AnomalyDbscan(df_log, reduce_dim=True, threshold=0.1, n_comps=2)
+```
 
 And finally compute the anomaly and/or plot the results
 
-<pre><code> df_anom, common_anom, common_non_anom = db.compute_anomaly()
- db.plot_clustering_results()
-</code></pre>
+```c
+df_anom, common_anom, common_non_anom = db.compute_anomaly()
+db.plot_clustering_results()
+```
 
 
 ### Monit
