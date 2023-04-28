@@ -38,7 +38,7 @@ This class object can plot the vectorized version of its messages, reduced in 2 
 
 ```sh
 df_log.plot_2d_words_service()
-#df_log.plot_3d_words_service
+df_log.plot_3d_words_service()
 ```
 
 Then use the type of Anomaly Detection object preferred
