@@ -58,7 +58,7 @@ And finally compute the anomaly and/or plot the results
 df_anom, common_anom, common_non_anom = db.compute_anomaly()
 db.plot_clustering_results()
 ```
-
+![alt text](https://github.com/filopacio/AnomalyDetection/blob/main/images/db.png)
 
 ### Monit
 
