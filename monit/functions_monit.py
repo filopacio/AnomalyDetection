@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 import scipy.stats as stats
 from collections import Counter
 from sklearn.preprocessing import StandardScaler
-from log import get_anomalies_from_mean_and_sd, get_anomalies_sliding_windows
+from log.functions_log import get_anomalies_from_mean_and_sd, get_anomalies_sliding_windows
 
 
 def compute_dbscan_monit(dict_ip: dict,
