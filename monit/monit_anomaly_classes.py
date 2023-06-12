@@ -6,8 +6,8 @@ from sklearn.cluster import DBSCAN
 from sklearn.cluster import KMeans
 import scipy.stats as stats
 from sklearn.preprocessing import StandardScaler
-from functions_log import get_anomalies_from_mean_and_sd, get_anomalies_sliding_windows
-from functions_monit import *
+from AnomalyDetection.log.functions_log import get_anomalies_from_mean_and_sd, get_anomalies_sliding_windows
+from AnomalyDetection.monit.functions_monit import *
 
 
 class Monit():
