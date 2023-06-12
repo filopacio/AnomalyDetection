@@ -42,6 +42,10 @@ df_log.plot_2d_words_service()
 df_log.plot_3d_words_service()
 ```
 
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
+
 Then use the type of Anomaly Detection object preferred
 
 ```sh
