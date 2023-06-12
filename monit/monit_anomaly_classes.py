@@ -153,9 +153,9 @@ class MonitAnomalyTimeSeries(Monit):
         windows_size = self.windows_size
         monit_type = self.monit_type
         use_all_variables = self.use_all_variables
-        plot_distance_and_anomalies_from_host_farming(host=host,
-                                                      windows_size=windows_size,
-                                                      tolerance=tolerance,
-                                                      sliding_windows=sliding_windows,
-                                                      use_all_variables=use_all_variables)
-       
+        plot_distance_and_anomalies_from_host(host=host,
+                                              windows_size=windows_size,
+                                              tolerance=tolerance,
+                                              sliding_windows=sliding_windows,
+                                              use_all_variables=use_all_variables)
+
