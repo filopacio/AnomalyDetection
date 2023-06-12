@@ -52,8 +52,6 @@ class Log():
         ax.set_xlabel('comp. 1')
         ax.set_ylabel('comp. 2')
         ax.set_zlabel('comp. 3')
-        for x, y, z, label in zip(x, y, z):
-            ax.text(x, y, z, label)
         plt.tick_params(axis='x', labelsize=15)
         plt.tick_params(axis='y', labelsize=15)
         plt.tick_params(axis='z', labelsize=15)
