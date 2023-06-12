@@ -246,9 +246,9 @@ class LogAnomalyPCA(Log):
        n_comps = self.n_comps
        df = df.fillna(0)
        scaler = StandardScaler()
-       df.iloc[:,1:] = scaler.fit_transform(df.iloc[:,1:].to_numpy())
+       df.iloc[:,2:] = scaler.fit_transform(df.iloc[:,2:].to_numpy())
        if not df.empty:
-          X = np.array(df_1.iloc[:, 1:])
+          X = np.array(df_1.iloc[:, 2:])
           pca = PCA().fit(X)
           trans_x = pca.transform(X)
           p_comp = pca.components_
