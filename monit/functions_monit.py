@@ -305,7 +305,7 @@ def plot_distance_and_anomalies_from_host_farming(host, windows_size, tolerance,
         anomaly = get_anomalies_from_mean_and_sd(distance, tolerance, use_all_variables)
     else:
         anomaly = get_anomalies_sliding_windows(distance, windows_size, tolerance, use_all_variables)
-    plot_distance_and_anomaly(distance, anomaly, sliding_windows, use_all_variables)
+    plot_distance_and_anomaly(distance, anomaly, sliding_windows)
 
 
 def hypothesis_monit(dict_results: dict):
