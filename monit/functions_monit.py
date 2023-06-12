@@ -290,22 +290,22 @@ def plot_distance_and_anomaly(distance, anomalies, sliding_windows):
     plt.show()
 
 
-def plot_distance_and_anomalies_from_host_storage(host, windows_size, tolerance, sliding_windows):
-    distance = get_time_series_of_distances_monit(host, 'storage')
+def plot_distance_and_anomalies_from_host_storage(host: str, windows_size: int, tolerance: float, sliding_windows: int, use_all_variables: bool):
+    distance = get_time_series_of_distances_monit(host, 'storage', use_all_variables)
     if not sliding_windows:
-        anomaly = get_anomalies_from_mean_and_sd(distance, tolerance)
+        anomaly = get_anomalies_from_mean_and_sd(distance, tolerance, use_all_variables)
     else:
         anomaly = get_anomalies_sliding_windows(distance, windows_size, tolerance)
     plot_distance_and_anomaly(distance, anomaly, sliding_windows)
 
 
-def plot_distance_and_anomalies_from_host_farming(host, windows_size, tolerance, sliding_windows):
-    distance = get_time_series_of_distances_monit(host, 'farming')
+def plot_distance_and_anomalies_from_host_farming(host, windows_size, tolerance, sliding_windows, use_all_variables):
+    distance = get_time_series_of_distances_monit(host, 'farming', use_all_variables)
     if not sliding_windows:
-        anomaly = get_anomalies_from_mean_and_sd(distance, tolerance)
+        anomaly = get_anomalies_from_mean_and_sd(distance, tolerance, use_all_variables)
     else:
-        anomaly = get_anomalies_sliding_windows(distance, windows_size, tolerance)
-    plot_distance_and_anomaly(distance, anomaly, sliding_windows)
+        anomaly = get_anomalies_sliding_windows(distance, windows_size, tolerance, use_all_variables)
+    plot_distance_and_anomaly(distance, anomaly, sliding_windows, use_all_variables)
 
 
 def hypothesis_monit(dict_results: dict):
