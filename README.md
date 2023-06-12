@@ -62,6 +62,22 @@ db.plot_clustering_results()
 
 ### Monit
 
+```sh
+ts_monit_storage = MonitAnomalyTimeSeries(monit_type='farming', 
+                                          dict_ip=dict_farm, 
+                                          sliding_windows=False, 
+                                          windows_size=35,
+                                          tolerance=0.9, 
+                                          use_all_variables=True)
+```
+
+And then plot the results for a particular machine
+```sh
+ts_monit_storage.plot_distance_and_anomaly(host='farm_dbfarm-2')
+```
+![alt text](https://github.com/filopacio/AnomalyDetection/blob/main/images/ts_monit.png)
+
+
 
 
 
