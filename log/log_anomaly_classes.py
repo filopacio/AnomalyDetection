@@ -55,6 +55,7 @@ class Log():
             ax.text(x, y, z, label)
         plt.tick_params(axis='x', labelsize=15)
         plt.tick_params(axis='y', labelsize=15)
+        plt.tick_params(axis='z', labelsize=15)
         plt.show()
 
 
@@ -244,7 +245,6 @@ class LogAnomalyPCA(Log):
        df_service = self.df
        tolerance = self.tolerance
        n_comps = self.n_comps
-       df = dict_ip_store[host].copy()
        df = df.fillna(0)
        scaler = StandardScaler()
        df.iloc[:,1:] = scaler.fit_transform(df.iloc[:,1:].to_numpy())
