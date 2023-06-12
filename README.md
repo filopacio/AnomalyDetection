@@ -42,9 +42,9 @@ df_log.plot_2d_words_service()
 df_log.plot_3d_words_service()
 ```
 
-![alt text](http://url/to/img.png)
+![alt text]([http://url/to/img.png](https://github.com/filopacio/AnomalyDetection/blob/main/images/2d.png))
 
-![alt text](http://url/to/img.png)
+![alt text]([http://url/to/img.png](https://github.com/filopacio/AnomalyDetection/blob/main/images/3d.png))
 
 Then use the type of Anomaly Detection object preferred
 
