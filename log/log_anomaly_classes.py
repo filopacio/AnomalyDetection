@@ -6,6 +6,7 @@ from gensim.models import Word2Vec
 from sklearn.decomposition import PCA
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 from collections import Counter
 import wordcloud
 from AnomalyDetection.data.functions_data import clean_text
