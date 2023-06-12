@@ -279,6 +279,8 @@ def plot_distance_and_anomaly(distance, anomalies, sliding_windows):
             anomalies -> pd.Series
     :return: plot
     """
+    plt.figure(figsize=(15,8))
+    plt.grid()
     ax = distance.plot()
     anomalies.plot(marker='o', ls='', ax=ax, color='r')
     if sliding_windows:
