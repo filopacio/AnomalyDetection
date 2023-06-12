@@ -242,7 +242,7 @@ class LogAnomalyPCA(Log):
         return df_service_temp, common_anom_words, common_non_anom_words
     
     def plot_recon_err_pca(self):
-       df_service = self.df
+       df = self.df
        tolerance = self.tolerance
        n_comps = self.n_comps
        df = df.fillna(0)
