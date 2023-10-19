@@ -1,6 +1,6 @@
-# AnomalyDetection
-Master Thesis in Statistical Sciences at University of Bologna
+# Anomaly Detection in Data Center IT Infrastructure using Natural Language Processing, PCA Reconstruction Error and Time Series Solutions
 
+Master Thesis in Statistical Sciences at University of Bologna
 Title: Unsupervised Machine Learning Techniques for Anomaly Detection with Multi-Source Data
 
 Supervisor: prof.ssa Elisabetta Ronchieri
