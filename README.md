@@ -1,11 +1,14 @@
 # Anomaly Detection in Data Center IT Infrastructure using Natural Language Processing, PCA Reconstruction Error and Time Series Solutions
 
 Master Thesis in Statistical Sciences at University of Bologna
-Title: Unsupervised Machine Learning Techniques for Anomaly Detection with Multi-Source Data
 
 Supervisor: prof.ssa Elisabetta Ronchieri
 
-[Here's the link to the paper based on the thesis](https://pos.sissa.it/434/024/pdf)
+Title: Unsupervised Machine Learning Techniques for Anomaly Detection with Multi-Source Data
+Publication: [Here's the link to the paper based on the thesis](https://pos.sissa.it/434/024/pdf)
+
+
+
 
 **Data**: 
 - Textual Data from Log Messages produced by different softwares and logging services running on several machines
