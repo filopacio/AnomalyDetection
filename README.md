@@ -5,6 +5,8 @@ Title: Unsupervised Machine Learning Techniques for Anomaly Detection with Multi
 
 Supervisor: prof.ssa Elisabetta Ronchieri
 
+[Here's the link to the paper based on the thesis](https://pos.sissa.it/434/024/pdf)
+
 **Data**: 
 - Textual Data from Log Messages produced by different softwares and logging services running on several machines
 - Numerical Data from Monitoring Process. So, different metrics representing the health status of machines were given. (e.g. CPU usage, load averages, etc.)
