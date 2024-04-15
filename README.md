@@ -6,7 +6,7 @@ Supervisor: prof.ssa Elisabetta Ronchieri
 
 Title: Unsupervised Machine Learning Techniques for Anomaly Detection with Multi-Source Data
 
-Publication: [Here's the link to the paper based on the thesis](https://pos.sissa.it/434/024/pdf)
+Publication: [Here's the link to the paper based on the thesis](https://scholar.google.com/scholar?hl=it&as_sdt=0%2C5&q=Anomaly+Detection+in+Data+Center+IT+Infrastructure+using+Natural+Language+Processing+and+Time+Series+Solutions&btnG=)
 
 
 
